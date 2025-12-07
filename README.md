@@ -258,7 +258,7 @@ Engenharia Elétrica - Universidade Estadual de Londrina
 Ano: 2025
 
 📧 Email: cristian.alberto12@gmail.com  
-🐙 GitHub: [@seu-usuario](https://github.com/cristianalberto)
+🐙 GitHub: @cristianalberto (https://github.com/cristianalberto)
 
 ---
 
