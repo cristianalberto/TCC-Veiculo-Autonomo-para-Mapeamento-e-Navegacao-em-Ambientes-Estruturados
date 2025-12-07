@@ -1,0 +1,11 @@
+Code directory
+1_Auto_move
+2_servo_Angle
+3_Ultrasonic
+4_Obstacle_Avoidance
+5_Tracking
+6.1_ESP32_Car
+6.2_Arduino_UNO
+
+Codes 1 to 5 are test learning and 6.1/6.2 are final codes.
+Unplug the connection to the Bluetooth communication port RX/TX before uploading the program code and upload "6.1_ESP32_Car" to ESP32-CAM and "6.2_Arduino_UNO" to Arduino UNO.
