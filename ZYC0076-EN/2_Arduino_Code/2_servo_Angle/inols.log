@@ -1,0 +1,1043 @@
+
+
+
+
+
+
+
+Started logging.
+
+<<<
+Content-Length: 3347
+
+{"jsonrpc":"2.0","id":0,"method":"initialize","params":{"processId":5040,"clientInfo":{"name":"vscode","version":"1.53.2"},"rootPath":"e:\\5-教程\\1.tutorial\\ZYC0076拍照麦克轮WiFi小车\\ZYC0076\\ZYC0076-EN\\4_Arduino_Code\\2_servo_Angle","rootUri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle","capabilities":{"workspace":{"applyEdit":true,"workspaceEdit":{"documentChanges":true,"resourceOperations":["create","rename","delete"],"failureHandling":"textOnlyTransactional"},"didChangeConfiguration":{"dynamicRegistration":true},"didChangeWatchedFiles":{"dynamicRegistration":true},"symbol":{"dynamicRegistration":true,"symbolKind":{"valueSet":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26]}},"executeCommand":{"dynamicRegistration":true},"configuration":true,"workspaceFolders":true},"textDocument":{"publishDiagnostics":{"relatedInformation":true,"versionSupport":false,"tagSupport":{"valueSet":[1,2]}},"synchronization":{"dynamicRegistration":true,"willSave":true,"willSaveWaitUntil":true,"didSave":true},"completion":{"dynamicRegistration":true,"contextSupport":true,"completionItem":{"snippetSupport":true,"commitCharactersSupport":true,"documentationFormat":["markdown","plaintext"],"deprecatedSupport":true,"preselectSupport":true,"tagSupport":{"valueSet":[1]}},"completionItemKind":{"valueSet":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25]}},"hover":{"dynamicRegistration":true,"contentFormat":["markdown","plaintext"]},"signatureHelp":{"dynamicRegistration":true,"signatureInformation":{"documentationFormat":["markdown","plaintext"],"parameterInformation":{"labelOffsetSupport":true}},"contextSupport":true},"definition":{"dynamicRegistration":true,"linkSupport":true},"references":{"dynamicRegistration":true},"documentHighlight":{"dynamicRegistration":true},"documentSymbol":{"dynamicRegistration":true,"symbolKind":{"valueSet":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26]},"hierarchicalDocumentSymbolSupport":true},"codeAction":{"dynamicRegistration":true,"isPreferredSupport":true,"codeActionLiteralSupport":{"codeActionKind":{"valueSet":["","quickfix","refactor","refactor.extract","refactor.inline","refactor.rewrite","source","source.organizeImports"]}}},"codeLens":{"dynamicRegistration":true},"formatting":{"dynamicRegistration":true},"rangeFormatting":{"dynamicRegistration":true},"onTypeFormatting":{"dynamicRegistration":true},"rename":{"dynamicRegistration":true,"prepareSupport":true},"documentLink":{"dynamicRegistration":true,"tooltipSupport":true},"typeDefinition":{"dynamicRegistration":true,"linkSupport":true},"implementation":{"dynamicRegistration":true,"linkSupport":true},"colorProvider":{"dynamicRegistration":true},"foldingRange":{"dynamicRegistration":true,"rangeLimit":5000,"lineFoldingOnly":true},"declaration":{"dynamicRegistration":true,"linkSupport":true},"selectionRange":{"dynamicRegistration":true}},"window":{"workDoneProgress":true}},"initializationOptions":{},"trace":"off","workspaceFolders":[{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle","name":"2_servo_Angle"}]}}
+>>>
+Content-Length: 936
+
+{"jsonrpc":"2.0","id":0,"result":{"capabilities":{"textDocumentSync":{"openClose":true,"change":2,"save":{"includeText":true}},"completionProvider":{"triggerCharacters":[".","\u003c","\u003e",":","\"","/"],"allCommitCharacters":[" ","\t","(",")","[","]","{","}","\u003c","\u003e",":",";",",","+","-","/","*","%","^","\u0026","#","?",".","=","\"","'","|"],"completionItem":{}},"hoverProvider":{},"signatureHelpProvider":{"triggerCharacters":["(",","]},"definitionProvider":{},"documentHighlightProvider":{},"documentSymbolProvider":{},"codeActionProvider":{"codeActionKinds":["quickfix","refactor","info"]},"documentFormattingProvider":{},"documentRangeFormattingProvider":{},"documentOnTypeFormattingProvider":{"firstTriggerCharacter":"\n"},"renameProvider":{},"executeCommandProvider":{"commands":["clangd.applyFix","clangd.applyTweak"]},"workspaceSymbolProvider":{}},"serverInfo":{"name":"arduino-language-server","version":"0.7.2"}}}
+<<<
+Content-Length: 52
+
+{"jsonrpc":"2.0","method":"initialized","params":{}}Content-Length: 622
+
+{"jsonrpc":"2.0","method":"textDocument/didOpen","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino","languageId":"cpp","version":17,"text":"#include    <Servo.h>\r\n\r\n#define servo_PIN    9\r\n\r\nServo myservo;\r\n\r\nvoid setup()\r\n{\r\n    myservo.attach(servo_PIN);\r\n    myservo.write(90);\r\n}\r\n\r\nvoid loop()\r\n{\r\n        myservo.write(45);    \r\n        delay(15);\r\n\r\n        myservo.write(135);\r\n        delay(15);\r\n}\r\n"}}}Content-Length: 386
+
+{"jsonrpc":"2.0","id":1,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino"},"range":{"start":{"line":8,"character":30},"end":{"line":8,"character":30}},"context":{"diagnostics":[]}}}Content-Length: 285
+
+{"jsonrpc":"2.0","id":2,"method":"textDocument/documentSymbol","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino"}}}Content-Length: 62
+
+{"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":2}}Content-Length: 285
+
+{"jsonrpc":"2.0","id":3,"method":"textDocument/documentSymbol","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino"}}}Content-Length: 62
+
+{"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":1}}
+>>>
+Content-Length: 113
+
+{"jsonrpc":"2.0","id":"1","method":"window/workDoneProgress/create","params":{"token":"backgroundIndexProgress"}}Content-Length: 36
+
+{"jsonrpc":"2.0","id":1,"result":[]}Content-Length: 651
+
+{"jsonrpc":"2.0","id":2,"result":[{"name":"myservo","detail":"Servo","kind":13,"range":{"start":{"line":4,"character":0},"end":{"line":4,"character":13}},"selectionRange":{"start":{"line":4,"character":6},"end":{"line":4,"character":13}}},{"name":"setup","detail":"void ()","kind":12,"range":{"start":{"line":6,"character":0},"end":{"line":10,"character":1}},"selectionRange":{"start":{"line":6,"character":5},"end":{"line":6,"character":10}}},{"name":"loop","detail":"void ()","kind":12,"range":{"start":{"line":12,"character":0},"end":{"line":19,"character":1}},"selectionRange":{"start":{"line":12,"character":5},"end":{"line":12,"character":9}}}]}Content-Length: 651
+
+{"jsonrpc":"2.0","id":3,"result":[{"name":"myservo","detail":"Servo","kind":13,"range":{"start":{"line":4,"character":0},"end":{"line":4,"character":13}},"selectionRange":{"start":{"line":4,"character":6},"end":{"line":4,"character":13}}},{"name":"setup","detail":"void ()","kind":12,"range":{"start":{"line":6,"character":0},"end":{"line":10,"character":1}},"selectionRange":{"start":{"line":6,"character":5},"end":{"line":6,"character":10}}},{"name":"loop","detail":"void ()","kind":12,"range":{"start":{"line":12,"character":0},"end":{"line":19,"character":1}},"selectionRange":{"start":{"line":12,"character":5},"end":{"line":12,"character":9}}}]}
+<<<
+Content-Length: 40
+
+{"jsonrpc":"2.0","id":"1","result":null}
+>>>
+Content-Length: 143
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"begin","title":"indexing","percentage":0}}}Content-Length: 143
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"3/27","percentage":11}}}Content-Length: 143
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"4/27","percentage":14}}}Content-Length: 143
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"4/27","percentage":14}}}Content-Length: 143
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"5/27","percentage":18}}}Content-Length: 143
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"5/27","percentage":18}}}Content-Length: 143
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"6/27","percentage":22}}}Content-Length: 143
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"6/27","percentage":22}}}Content-Length: 143
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"7/27","percentage":25}}}Content-Length: 143
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"7/27","percentage":25}}}Content-Length: 143
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"8/27","percentage":29}}}Content-Length: 143
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"9/27","percentage":33}}}Content-Length: 143
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"9/27","percentage":33}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"10/27","percentage":37}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"10/27","percentage":37}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"11/27","percentage":40}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"11/27","percentage":40}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"12/27","percentage":44}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"12/27","percentage":44}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"13/27","percentage":48}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"13/27","percentage":48}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"14/27","percentage":51}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"14/27","percentage":51}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"15/27","percentage":55}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"16/27","percentage":59}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"17/27","percentage":62}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"18/27","percentage":66}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"19/27","percentage":70}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"20/27","percentage":74}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"20/27","percentage":74}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"21/27","percentage":77}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"21/27","percentage":77}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"22/27","percentage":81}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"23/27","percentage":85}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"24/27","percentage":88}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"25/27","percentage":92}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"26/27","percentage":96}}}Content-Length: 107
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"end"}}}
+<<<
+Content-Length: 386
+
+{"jsonrpc":"2.0","id":4,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino"},"range":{"start":{"line":10,"character":1},"end":{"line":10,"character":1}},"context":{"diagnostics":[]}}}
+>>>
+Content-Length: 36
+
+{"jsonrpc":"2.0","id":4,"result":[]}
+<<<
+Content-Length: 179
+
+{"jsonrpc":"2.0","method":"ino/didCompleteBuild","params":{"buildOutputUri":"file:///c%3A/Users/Administrator/AppData/Local/Temp/arduino-sketch-3D3C2F2C7732B6D7E60EDA9BFA82F8C4"}}
+>>>
+Content-Length: 118
+
+{"jsonrpc":"2.0","id":"2","method":"window/workDoneProgress/create","params":{"token":"arduinoLanguageServerRebuild"}}
+<<<
+Content-Length: 40
+
+{"jsonrpc":"2.0","id":"2","result":null}
+>>>
+Content-Length: 140
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"arduinoLanguageServerRebuild","value":{"kind":"begin","title":"Building sketch"}}}Content-Length: 129
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"arduinoLanguageServerRebuild","value":{"kind":"end","message":"done"}}}Content-Length: 113
+
+{"jsonrpc":"2.0","id":"3","method":"window/workDoneProgress/create","params":{"token":"backgroundIndexProgress"}}
+<<<
+Content-Length: 40
+
+{"jsonrpc":"2.0","id":"3","result":null}
+>>>
+Content-Length: 143
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"begin","title":"indexing","percentage":0}}}Content-Length: 141
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"0/1","percentage":0}}}Content-Length: 141
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"0/1","percentage":0}}}Content-Length: 107
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"end"}}}
+<<<
+Content-Length: 179
+
+{"jsonrpc":"2.0","method":"ino/didCompleteBuild","params":{"buildOutputUri":"file:///c%3A/Users/Administrator/AppData/Local/Temp/arduino-sketch-3D3C2F2C7732B6D7E60EDA9BFA82F8C4"}}
+>>>
+Content-Length: 118
+
+{"jsonrpc":"2.0","id":"4","method":"window/workDoneProgress/create","params":{"token":"arduinoLanguageServerRebuild"}}
+<<<
+Content-Length: 40
+
+{"jsonrpc":"2.0","id":"4","result":null}
+>>>
+Content-Length: 140
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"arduinoLanguageServerRebuild","value":{"kind":"begin","title":"Building sketch"}}}Content-Length: 129
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"arduinoLanguageServerRebuild","value":{"kind":"end","message":"done"}}}Content-Length: 113
+
+{"jsonrpc":"2.0","id":"5","method":"window/workDoneProgress/create","params":{"token":"backgroundIndexProgress"}}
+<<<
+Content-Length: 40
+
+{"jsonrpc":"2.0","id":"5","result":null}
+>>>
+Content-Length: 143
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"begin","title":"indexing","percentage":0}}}Content-Length: 141
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"0/1","percentage":0}}}Content-Length: 141
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"0/1","percentage":0}}}Content-Length: 107
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"end"}}}
+<<<
+Content-Length: 314
+
+{"jsonrpc":"2.0","id":5,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino"},"position":{"line":17,"character":23}}}
+>>>
+Content-Length: 38
+
+{"jsonrpc":"2.0","id":5,"result":null}
+<<<
+Content-Length: 314
+
+{"jsonrpc":"2.0","id":6,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino"},"position":{"line":17,"character":23}}}
+>>>
+Content-Length: 38
+
+{"jsonrpc":"2.0","id":6,"result":null}
+<<<
+Content-Length: 314
+
+{"jsonrpc":"2.0","id":7,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino"},"position":{"line":17,"character":23}}}
+>>>
+Content-Length: 38
+
+{"jsonrpc":"2.0","id":7,"result":null}
+<<<
+Content-Length: 326
+
+{"jsonrpc":"2.0","id":8,"method":"textDocument/documentHighlight","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino"},"position":{"line":17,"character":23}}}
+>>>
+Content-Length: 36
+
+{"jsonrpc":"2.0","id":8,"result":[]}
+<<<
+Content-Length: 388
+
+{"jsonrpc":"2.0","id":9,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino"},"range":{"start":{"line":17,"character":23},"end":{"line":17,"character":23}},"context":{"diagnostics":[]}}}
+>>>
+Content-Length: 36
+
+{"jsonrpc":"2.0","id":9,"result":[]}
+<<<
+Content-Length: 389
+
+{"jsonrpc":"2.0","id":10,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino"},"range":{"start":{"line":17,"character":23},"end":{"line":17,"character":24}},"context":{"diagnostics":[]}}}
+>>>
+Content-Length: 37
+
+{"jsonrpc":"2.0","id":10,"result":[]}
+<<<
+Content-Length: 315
+
+{"jsonrpc":"2.0","id":11,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino"},"position":{"line":17,"character":23}}}
+>>>
+Content-Length: 39
+
+{"jsonrpc":"2.0","id":11,"result":null}
+<<<
+Content-Length: 286
+
+{"jsonrpc":"2.0","id":12,"method":"textDocument/documentSymbol","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino"}}}Content-Length: 412
+
+{"jsonrpc":"2.0","method":"textDocument/didChange","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino","version":18},"contentChanges":[{"range":{"start":{"line":17,"character":23},"end":{"line":17,"character":24}},"rangeLength":1,"text":"4"}]}}Content-Length: 63
+
+{"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":12}}Content-Length: 286
+
+{"jsonrpc":"2.0","id":13,"method":"textDocument/documentSymbol","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino"}}}
+>>>
+Content-Length: 652
+
+{"jsonrpc":"2.0","id":12,"result":[{"name":"myservo","detail":"Servo","kind":13,"range":{"start":{"line":4,"character":0},"end":{"line":4,"character":13}},"selectionRange":{"start":{"line":4,"character":6},"end":{"line":4,"character":13}}},{"name":"setup","detail":"void ()","kind":12,"range":{"start":{"line":6,"character":0},"end":{"line":10,"character":1}},"selectionRange":{"start":{"line":6,"character":5},"end":{"line":6,"character":10}}},{"name":"loop","detail":"void ()","kind":12,"range":{"start":{"line":12,"character":0},"end":{"line":19,"character":1}},"selectionRange":{"start":{"line":12,"character":5},"end":{"line":12,"character":9}}}]}Content-Length: 652
+
+{"jsonrpc":"2.0","id":13,"result":[{"name":"myservo","detail":"Servo","kind":13,"range":{"start":{"line":4,"character":0},"end":{"line":4,"character":13}},"selectionRange":{"start":{"line":4,"character":6},"end":{"line":4,"character":13}}},{"name":"setup","detail":"void ()","kind":12,"range":{"start":{"line":6,"character":0},"end":{"line":10,"character":1}},"selectionRange":{"start":{"line":6,"character":5},"end":{"line":6,"character":10}}},{"name":"loop","detail":"void ()","kind":12,"range":{"start":{"line":12,"character":0},"end":{"line":19,"character":1}},"selectionRange":{"start":{"line":12,"character":5},"end":{"line":12,"character":9}}}]}
+<<<
+Content-Length: 389
+
+{"jsonrpc":"2.0","id":14,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino"},"range":{"start":{"line":17,"character":24},"end":{"line":17,"character":24}},"context":{"diagnostics":[]}}}
+>>>
+Content-Length: 37
+
+{"jsonrpc":"2.0","id":14,"result":[]}
+<<<
+Content-Length: 603
+
+{"jsonrpc":"2.0","method":"textDocument/didSave","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino","version":18},"text":"#include    <Servo.h>\r\n\r\n#define servo_PIN    9\r\n\r\nServo myservo;\r\n\r\nvoid setup()\r\n{\r\n    myservo.attach(servo_PIN);\r\n    myservo.write(90);\r\n}\r\n\r\nvoid loop()\r\n{\r\n        myservo.write(45);    \r\n        delay(15);\r\n\r\n        myservo.write(145);\r\n        delay(15);\r\n}\r\n"}}
+>>>
+Content-Length: 118
+
+{"jsonrpc":"2.0","id":"6","method":"window/workDoneProgress/create","params":{"token":"arduinoLanguageServerRebuild"}}
+<<<
+Content-Length: 40
+
+{"jsonrpc":"2.0","id":"6","result":null}
+>>>
+Content-Length: 140
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"arduinoLanguageServerRebuild","value":{"kind":"begin","title":"Building sketch"}}}Content-Length: 129
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"arduinoLanguageServerRebuild","value":{"kind":"end","message":"done"}}}
+<<<
+Content-Length: 314
+
+{"jsonrpc":"2.0","id":15,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino"},"position":{"line":2,"character":15}}}
+>>>
+Content-Length: 217
+
+{"jsonrpc":"2.0","id":15,"result":{"contents":{"kind":"markdown","value":"### macro `servo_PIN`  \n\n---\n```cpp\n#define servo_PIN 9\n```"},"range":{"start":{"line":2,"character":8},"end":{"line":2,"character":17}}}}
+<<<
+Content-Length: 179
+
+{"jsonrpc":"2.0","method":"ino/didCompleteBuild","params":{"buildOutputUri":"file:///c%3A/Users/Administrator/AppData/Local/Temp/arduino-sketch-3D3C2F2C7732B6D7E60EDA9BFA82F8C4"}}
+>>>
+Content-Length: 118
+
+{"jsonrpc":"2.0","id":"7","method":"window/workDoneProgress/create","params":{"token":"arduinoLanguageServerRebuild"}}
+<<<
+Content-Length: 40
+
+{"jsonrpc":"2.0","id":"7","result":null}
+>>>
+Content-Length: 140
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"arduinoLanguageServerRebuild","value":{"kind":"begin","title":"Building sketch"}}}Content-Length: 129
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"arduinoLanguageServerRebuild","value":{"kind":"end","message":"done"}}}Content-Length: 113
+
+{"jsonrpc":"2.0","id":"8","method":"window/workDoneProgress/create","params":{"token":"backgroundIndexProgress"}}
+<<<
+Content-Length: 40
+
+{"jsonrpc":"2.0","id":"8","result":null}
+>>>
+Content-Length: 143
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"begin","title":"indexing","percentage":0}}}Content-Length: 141
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"0/1","percentage":0}}}Content-Length: 141
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"0/1","percentage":0}}}Content-Length: 107
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"end"}}}
+<<<
+Content-Length: 315
+
+{"jsonrpc":"2.0","id":16,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino"},"position":{"line":17,"character":23}}}
+>>>
+Content-Length: 39
+
+{"jsonrpc":"2.0","id":16,"result":null}
+<<<
+Content-Length: 327
+
+{"jsonrpc":"2.0","id":17,"method":"textDocument/documentHighlight","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino"},"position":{"line":17,"character":23}}}
+>>>
+Content-Length: 37
+
+{"jsonrpc":"2.0","id":17,"result":[]}
+<<<
+Content-Length: 389
+
+{"jsonrpc":"2.0","id":18,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino"},"range":{"start":{"line":17,"character":23},"end":{"line":17,"character":24}},"context":{"diagnostics":[]}}}
+>>>
+Content-Length: 37
+
+{"jsonrpc":"2.0","id":18,"result":[]}
+<<<
+Content-Length: 286
+
+{"jsonrpc":"2.0","id":19,"method":"textDocument/documentSymbol","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino"}}}Content-Length: 412
+
+{"jsonrpc":"2.0","method":"textDocument/didChange","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino","version":19},"contentChanges":[{"range":{"start":{"line":17,"character":23},"end":{"line":17,"character":24}},"rangeLength":1,"text":"3"}]}}Content-Length: 63
+
+{"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":19}}Content-Length: 286
+
+{"jsonrpc":"2.0","id":20,"method":"textDocument/documentSymbol","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino"}}}
+>>>
+Content-Length: 652
+
+{"jsonrpc":"2.0","id":19,"result":[{"name":"myservo","detail":"Servo","kind":13,"range":{"start":{"line":4,"character":0},"end":{"line":4,"character":13}},"selectionRange":{"start":{"line":4,"character":6},"end":{"line":4,"character":13}}},{"name":"setup","detail":"void ()","kind":12,"range":{"start":{"line":6,"character":0},"end":{"line":10,"character":1}},"selectionRange":{"start":{"line":6,"character":5},"end":{"line":6,"character":10}}},{"name":"loop","detail":"void ()","kind":12,"range":{"start":{"line":12,"character":0},"end":{"line":19,"character":1}},"selectionRange":{"start":{"line":12,"character":5},"end":{"line":12,"character":9}}}]}Content-Length: 652
+
+{"jsonrpc":"2.0","id":20,"result":[{"name":"myservo","detail":"Servo","kind":13,"range":{"start":{"line":4,"character":0},"end":{"line":4,"character":13}},"selectionRange":{"start":{"line":4,"character":6},"end":{"line":4,"character":13}}},{"name":"setup","detail":"void ()","kind":12,"range":{"start":{"line":6,"character":0},"end":{"line":10,"character":1}},"selectionRange":{"start":{"line":6,"character":5},"end":{"line":6,"character":10}}},{"name":"loop","detail":"void ()","kind":12,"range":{"start":{"line":12,"character":0},"end":{"line":19,"character":1}},"selectionRange":{"start":{"line":12,"character":5},"end":{"line":12,"character":9}}}]}
+<<<
+Content-Length: 389
+
+{"jsonrpc":"2.0","id":21,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino"},"range":{"start":{"line":17,"character":24},"end":{"line":17,"character":24}},"context":{"diagnostics":[]}}}
+>>>
+Content-Length: 37
+
+{"jsonrpc":"2.0","id":21,"result":[]}
+<<<
+Content-Length: 603
+
+{"jsonrpc":"2.0","method":"textDocument/didSave","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino","version":19},"text":"#include    <Servo.h>\r\n\r\n#define servo_PIN    9\r\n\r\nServo myservo;\r\n\r\nvoid setup()\r\n{\r\n    myservo.attach(servo_PIN);\r\n    myservo.write(90);\r\n}\r\n\r\nvoid loop()\r\n{\r\n        myservo.write(45);    \r\n        delay(15);\r\n\r\n        myservo.write(135);\r\n        delay(15);\r\n}\r\n"}}
+>>>
+Content-Length: 118
+
+{"jsonrpc":"2.0","id":"9","method":"window/workDoneProgress/create","params":{"token":"arduinoLanguageServerRebuild"}}
+<<<
+Content-Length: 40
+
+{"jsonrpc":"2.0","id":"9","result":null}
+>>>
+Content-Length: 140
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"arduinoLanguageServerRebuild","value":{"kind":"begin","title":"Building sketch"}}}Content-Length: 129
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"arduinoLanguageServerRebuild","value":{"kind":"end","message":"done"}}}
+<<<
+Content-Length: 314
+
+{"jsonrpc":"2.0","id":22,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino"},"position":{"line":2,"character":12}}}
+>>>
+Content-Length: 217
+
+{"jsonrpc":"2.0","id":22,"result":{"contents":{"kind":"markdown","value":"### macro `servo_PIN`  \n\n---\n```cpp\n#define servo_PIN 9\n```"},"range":{"start":{"line":2,"character":8},"end":{"line":2,"character":17}}}}
+<<<
+Content-Length: 179
+
+{"jsonrpc":"2.0","method":"ino/didCompleteBuild","params":{"buildOutputUri":"file:///c%3A/Users/Administrator/AppData/Local/Temp/arduino-sketch-3D3C2F2C7732B6D7E60EDA9BFA82F8C4"}}
+>>>
+Content-Length: 119
+
+{"jsonrpc":"2.0","id":"10","method":"window/workDoneProgress/create","params":{"token":"arduinoLanguageServerRebuild"}}
+<<<
+Content-Length: 41
+
+{"jsonrpc":"2.0","id":"10","result":null}
+>>>
+Content-Length: 140
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"arduinoLanguageServerRebuild","value":{"kind":"begin","title":"Building sketch"}}}Content-Length: 129
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"arduinoLanguageServerRebuild","value":{"kind":"end","message":"done"}}}Content-Length: 114
+
+{"jsonrpc":"2.0","id":"11","method":"window/workDoneProgress/create","params":{"token":"backgroundIndexProgress"}}
+<<<
+Content-Length: 41
+
+{"jsonrpc":"2.0","id":"11","result":null}
+>>>
+Content-Length: 143
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"begin","title":"indexing","percentage":0}}}Content-Length: 141
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"0/1","percentage":0}}}Content-Length: 141
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"0/1","percentage":0}}}Content-Length: 107
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"end"}}}
+<<<
+Content-Length: 389
+
+{"jsonrpc":"2.0","id":23,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino"},"range":{"start":{"line":15,"character":18},"end":{"line":15,"character":18}},"context":{"diagnostics":[]}}}
+>>>
+Content-Length: 37
+
+{"jsonrpc":"2.0","id":23,"result":[]}
+<<<
+Content-Length: 315
+
+{"jsonrpc":"2.0","id":24,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino"},"position":{"line":15,"character":15}}}
+>>>
+Content-Length: 39
+
+{"jsonrpc":"2.0","id":24,"result":null}
+<<<
+Content-Length: 315
+
+{"jsonrpc":"2.0","id":25,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino"},"position":{"line":15,"character":14}}}
+>>>
+Content-Length: 39
+
+{"jsonrpc":"2.0","id":25,"result":null}
+<<<
+Content-Length: 327
+
+{"jsonrpc":"2.0","id":26,"method":"textDocument/documentHighlight","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino"},"position":{"line":15,"character":14}}}
+>>>
+Content-Length: 212
+
+{"jsonrpc":"2.0","id":26,"result":[{"range":{"start":{"line":15,"character":8},"end":{"line":15,"character":13}},"kind":1},{"range":{"start":{"line":18,"character":8},"end":{"line":18,"character":13}},"kind":1}]}
+<<<
+Content-Length: 389
+
+{"jsonrpc":"2.0","id":27,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino"},"range":{"start":{"line":15,"character":14},"end":{"line":15,"character":15}},"context":{"diagnostics":[]}}}
+>>>
+Content-Length: 37
+
+{"jsonrpc":"2.0","id":27,"result":[]}
+<<<
+Content-Length: 389
+
+{"jsonrpc":"2.0","id":28,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino"},"range":{"start":{"line":15,"character":14},"end":{"line":15,"character":16}},"context":{"diagnostics":[]}}}
+>>>
+Content-Length: 37
+
+{"jsonrpc":"2.0","id":28,"result":[]}
+<<<
+Content-Length: 315
+
+{"jsonrpc":"2.0","id":29,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino"},"position":{"line":15,"character":15}}}
+>>>
+Content-Length: 39
+
+{"jsonrpc":"2.0","id":29,"result":null}
+<<<
+Content-Length: 286
+
+{"jsonrpc":"2.0","id":30,"method":"textDocument/documentSymbol","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino"}}}Content-Length: 412
+
+{"jsonrpc":"2.0","method":"textDocument/didChange","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino","version":20},"contentChanges":[{"range":{"start":{"line":15,"character":14},"end":{"line":15,"character":16}},"rangeLength":2,"text":"3"}]}}Content-Length: 63
+
+{"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":30}}Content-Length: 286
+
+{"jsonrpc":"2.0","id":31,"method":"textDocument/documentSymbol","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino"}}}
+>>>
+Content-Length: 652
+
+{"jsonrpc":"2.0","id":30,"result":[{"name":"myservo","detail":"Servo","kind":13,"range":{"start":{"line":4,"character":0},"end":{"line":4,"character":13}},"selectionRange":{"start":{"line":4,"character":6},"end":{"line":4,"character":13}}},{"name":"setup","detail":"void ()","kind":12,"range":{"start":{"line":6,"character":0},"end":{"line":10,"character":1}},"selectionRange":{"start":{"line":6,"character":5},"end":{"line":6,"character":10}}},{"name":"loop","detail":"void ()","kind":12,"range":{"start":{"line":12,"character":0},"end":{"line":19,"character":1}},"selectionRange":{"start":{"line":12,"character":5},"end":{"line":12,"character":9}}}]}Content-Length: 652
+
+{"jsonrpc":"2.0","id":31,"result":[{"name":"myservo","detail":"Servo","kind":13,"range":{"start":{"line":4,"character":0},"end":{"line":4,"character":13}},"selectionRange":{"start":{"line":4,"character":6},"end":{"line":4,"character":13}}},{"name":"setup","detail":"void ()","kind":12,"range":{"start":{"line":6,"character":0},"end":{"line":10,"character":1}},"selectionRange":{"start":{"line":6,"character":5},"end":{"line":6,"character":10}}},{"name":"loop","detail":"void ()","kind":12,"range":{"start":{"line":12,"character":0},"end":{"line":19,"character":1}},"selectionRange":{"start":{"line":12,"character":5},"end":{"line":12,"character":9}}}]}
+<<<
+Content-Length: 389
+
+{"jsonrpc":"2.0","id":32,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino"},"range":{"start":{"line":15,"character":15},"end":{"line":15,"character":15}},"context":{"diagnostics":[]}}}
+>>>
+Content-Length: 37
+
+{"jsonrpc":"2.0","id":32,"result":[]}
+<<<
+Content-Length: 286
+
+{"jsonrpc":"2.0","id":33,"method":"textDocument/documentSymbol","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino"}}}Content-Length: 412
+
+{"jsonrpc":"2.0","method":"textDocument/didChange","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino","version":21},"contentChanges":[{"range":{"start":{"line":15,"character":15},"end":{"line":15,"character":15}},"rangeLength":0,"text":"0"}]}}Content-Length: 63
+
+{"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":33}}Content-Length: 286
+
+{"jsonrpc":"2.0","id":34,"method":"textDocument/documentSymbol","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino"}}}
+>>>
+Content-Length: 652
+
+{"jsonrpc":"2.0","id":33,"result":[{"name":"myservo","detail":"Servo","kind":13,"range":{"start":{"line":4,"character":0},"end":{"line":4,"character":13}},"selectionRange":{"start":{"line":4,"character":6},"end":{"line":4,"character":13}}},{"name":"setup","detail":"void ()","kind":12,"range":{"start":{"line":6,"character":0},"end":{"line":10,"character":1}},"selectionRange":{"start":{"line":6,"character":5},"end":{"line":6,"character":10}}},{"name":"loop","detail":"void ()","kind":12,"range":{"start":{"line":12,"character":0},"end":{"line":19,"character":1}},"selectionRange":{"start":{"line":12,"character":5},"end":{"line":12,"character":9}}}]}Content-Length: 652
+
+{"jsonrpc":"2.0","id":34,"result":[{"name":"myservo","detail":"Servo","kind":13,"range":{"start":{"line":4,"character":0},"end":{"line":4,"character":13}},"selectionRange":{"start":{"line":4,"character":6},"end":{"line":4,"character":13}}},{"name":"setup","detail":"void ()","kind":12,"range":{"start":{"line":6,"character":0},"end":{"line":10,"character":1}},"selectionRange":{"start":{"line":6,"character":5},"end":{"line":6,"character":10}}},{"name":"loop","detail":"void ()","kind":12,"range":{"start":{"line":12,"character":0},"end":{"line":19,"character":1}},"selectionRange":{"start":{"line":12,"character":5},"end":{"line":12,"character":9}}}]}
+<<<
+Content-Length: 389
+
+{"jsonrpc":"2.0","id":35,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino"},"range":{"start":{"line":15,"character":16},"end":{"line":15,"character":16}},"context":{"diagnostics":[]}}}
+>>>
+Content-Length: 37
+
+{"jsonrpc":"2.0","id":35,"result":[]}
+<<<
+Content-Length: 603
+
+{"jsonrpc":"2.0","method":"textDocument/didSave","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino","version":21},"text":"#include    <Servo.h>\r\n\r\n#define servo_PIN    9\r\n\r\nServo myservo;\r\n\r\nvoid setup()\r\n{\r\n    myservo.attach(servo_PIN);\r\n    myservo.write(90);\r\n}\r\n\r\nvoid loop()\r\n{\r\n        myservo.write(45);    \r\n        delay(30);\r\n\r\n        myservo.write(135);\r\n        delay(15);\r\n}\r\n"}}Content-Length: 389
+
+{"jsonrpc":"2.0","id":36,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino"},"range":{"start":{"line":15,"character":18},"end":{"line":15,"character":18}},"context":{"diagnostics":[]}}}
+>>>
+Content-Length: 37
+
+{"jsonrpc":"2.0","id":36,"result":[]}
+<<<
+Content-Length: 327
+
+{"jsonrpc":"2.0","id":37,"method":"textDocument/documentHighlight","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino"},"position":{"line":18,"character":15}}}
+>>>
+Content-Length: 37
+
+{"jsonrpc":"2.0","id":37,"result":[]}Content-Length: 119
+
+{"jsonrpc":"2.0","id":"12","method":"window/workDoneProgress/create","params":{"token":"arduinoLanguageServerRebuild"}}
+<<<
+Content-Length: 41
+
+{"jsonrpc":"2.0","id":"12","result":null}
+>>>
+Content-Length: 140
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"arduinoLanguageServerRebuild","value":{"kind":"begin","title":"Building sketch"}}}
+<<<
+Content-Length: 389
+
+{"jsonrpc":"2.0","id":38,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino"},"range":{"start":{"line":18,"character":14},"end":{"line":18,"character":16}},"context":{"diagnostics":[]}}}
+>>>
+Content-Length: 37
+
+{"jsonrpc":"2.0","id":38,"result":[]}Content-Length: 129
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"arduinoLanguageServerRebuild","value":{"kind":"end","message":"done"}}}
+<<<
+Content-Length: 315
+
+{"jsonrpc":"2.0","id":39,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino"},"position":{"line":18,"character":15}}}
+>>>
+Content-Length: 39
+
+{"jsonrpc":"2.0","id":39,"result":null}
+<<<
+Content-Length: 286
+
+{"jsonrpc":"2.0","id":40,"method":"textDocument/documentSymbol","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino"}}}Content-Length: 412
+
+{"jsonrpc":"2.0","method":"textDocument/didChange","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino","version":22},"contentChanges":[{"range":{"start":{"line":18,"character":14},"end":{"line":18,"character":16}},"rangeLength":2,"text":"3"}]}}Content-Length: 63
+
+{"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":40}}Content-Length: 286
+
+{"jsonrpc":"2.0","id":41,"method":"textDocument/documentSymbol","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino"}}}
+>>>
+Content-Length: 652
+
+{"jsonrpc":"2.0","id":40,"result":[{"name":"myservo","detail":"Servo","kind":13,"range":{"start":{"line":4,"character":0},"end":{"line":4,"character":13}},"selectionRange":{"start":{"line":4,"character":6},"end":{"line":4,"character":13}}},{"name":"setup","detail":"void ()","kind":12,"range":{"start":{"line":6,"character":0},"end":{"line":10,"character":1}},"selectionRange":{"start":{"line":6,"character":5},"end":{"line":6,"character":10}}},{"name":"loop","detail":"void ()","kind":12,"range":{"start":{"line":12,"character":0},"end":{"line":19,"character":1}},"selectionRange":{"start":{"line":12,"character":5},"end":{"line":12,"character":9}}}]}Content-Length: 652
+
+{"jsonrpc":"2.0","id":41,"result":[{"name":"myservo","detail":"Servo","kind":13,"range":{"start":{"line":4,"character":0},"end":{"line":4,"character":13}},"selectionRange":{"start":{"line":4,"character":6},"end":{"line":4,"character":13}}},{"name":"setup","detail":"void ()","kind":12,"range":{"start":{"line":6,"character":0},"end":{"line":10,"character":1}},"selectionRange":{"start":{"line":6,"character":5},"end":{"line":6,"character":10}}},{"name":"loop","detail":"void ()","kind":12,"range":{"start":{"line":12,"character":0},"end":{"line":19,"character":1}},"selectionRange":{"start":{"line":12,"character":5},"end":{"line":12,"character":9}}}]}
+<<<
+Content-Length: 389
+
+{"jsonrpc":"2.0","id":42,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino"},"range":{"start":{"line":18,"character":15},"end":{"line":18,"character":15}},"context":{"diagnostics":[]}}}
+>>>
+Content-Length: 37
+
+{"jsonrpc":"2.0","id":42,"result":[]}
+<<<
+Content-Length: 286
+
+{"jsonrpc":"2.0","id":43,"method":"textDocument/documentSymbol","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino"}}}Content-Length: 412
+
+{"jsonrpc":"2.0","method":"textDocument/didChange","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino","version":23},"contentChanges":[{"range":{"start":{"line":18,"character":15},"end":{"line":18,"character":15}},"rangeLength":0,"text":"0"}]}}Content-Length: 63
+
+{"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":43}}Content-Length: 286
+
+{"jsonrpc":"2.0","id":44,"method":"textDocument/documentSymbol","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino"}}}
+>>>
+Content-Length: 652
+
+{"jsonrpc":"2.0","id":43,"result":[{"name":"myservo","detail":"Servo","kind":13,"range":{"start":{"line":4,"character":0},"end":{"line":4,"character":13}},"selectionRange":{"start":{"line":4,"character":6},"end":{"line":4,"character":13}}},{"name":"setup","detail":"void ()","kind":12,"range":{"start":{"line":6,"character":0},"end":{"line":10,"character":1}},"selectionRange":{"start":{"line":6,"character":5},"end":{"line":6,"character":10}}},{"name":"loop","detail":"void ()","kind":12,"range":{"start":{"line":12,"character":0},"end":{"line":19,"character":1}},"selectionRange":{"start":{"line":12,"character":5},"end":{"line":12,"character":9}}}]}Content-Length: 652
+
+{"jsonrpc":"2.0","id":44,"result":[{"name":"myservo","detail":"Servo","kind":13,"range":{"start":{"line":4,"character":0},"end":{"line":4,"character":13}},"selectionRange":{"start":{"line":4,"character":6},"end":{"line":4,"character":13}}},{"name":"setup","detail":"void ()","kind":12,"range":{"start":{"line":6,"character":0},"end":{"line":10,"character":1}},"selectionRange":{"start":{"line":6,"character":5},"end":{"line":6,"character":10}}},{"name":"loop","detail":"void ()","kind":12,"range":{"start":{"line":12,"character":0},"end":{"line":19,"character":1}},"selectionRange":{"start":{"line":12,"character":5},"end":{"line":12,"character":9}}}]}
+<<<
+Content-Length: 389
+
+{"jsonrpc":"2.0","id":45,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino"},"range":{"start":{"line":18,"character":16},"end":{"line":18,"character":16}},"context":{"diagnostics":[]}}}
+>>>
+Content-Length: 37
+
+{"jsonrpc":"2.0","id":45,"result":[]}
+<<<
+Content-Length: 389
+
+{"jsonrpc":"2.0","id":46,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino"},"range":{"start":{"line":18,"character":18},"end":{"line":18,"character":18}},"context":{"diagnostics":[]}}}
+>>>
+Content-Length: 37
+
+{"jsonrpc":"2.0","id":46,"result":[]}
+<<<
+Content-Length: 603
+
+{"jsonrpc":"2.0","method":"textDocument/didSave","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino","version":23},"text":"#include    <Servo.h>\r\n\r\n#define servo_PIN    9\r\n\r\nServo myservo;\r\n\r\nvoid setup()\r\n{\r\n    myservo.attach(servo_PIN);\r\n    myservo.write(90);\r\n}\r\n\r\nvoid loop()\r\n{\r\n        myservo.write(45);    \r\n        delay(30);\r\n\r\n        myservo.write(135);\r\n        delay(30);\r\n}\r\n"}}
+>>>
+Content-Length: 119
+
+{"jsonrpc":"2.0","id":"13","method":"window/workDoneProgress/create","params":{"token":"arduinoLanguageServerRebuild"}}
+<<<
+Content-Length: 41
+
+{"jsonrpc":"2.0","id":"13","result":null}
+>>>
+Content-Length: 140
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"arduinoLanguageServerRebuild","value":{"kind":"begin","title":"Building sketch"}}}Content-Length: 129
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"arduinoLanguageServerRebuild","value":{"kind":"end","message":"done"}}}Content-Length: 119
+
+{"jsonrpc":"2.0","id":"14","method":"window/workDoneProgress/create","params":{"token":"arduinoLanguageServerRebuild"}}
+<<<
+Content-Length: 41
+
+{"jsonrpc":"2.0","id":"14","result":null}
+>>>
+Content-Length: 140
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"arduinoLanguageServerRebuild","value":{"kind":"begin","title":"Building sketch"}}}Content-Length: 129
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"arduinoLanguageServerRebuild","value":{"kind":"end","message":"done"}}}Content-Length: 114
+
+{"jsonrpc":"2.0","id":"15","method":"window/workDoneProgress/create","params":{"token":"backgroundIndexProgress"}}
+<<<
+Content-Length: 41
+
+{"jsonrpc":"2.0","id":"15","result":null}
+>>>
+Content-Length: 143
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"begin","title":"indexing","percentage":0}}}Content-Length: 141
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"0/1","percentage":0}}}Content-Length: 141
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"0/1","percentage":0}}}Content-Length: 107
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"end"}}}
+<<<
+Content-Length: 179
+
+{"jsonrpc":"2.0","method":"ino/didCompleteBuild","params":{"buildOutputUri":"file:///c%3A/Users/Administrator/AppData/Local/Temp/arduino-sketch-3D3C2F2C7732B6D7E60EDA9BFA82F8C4"}}
+>>>
+Content-Length: 119
+
+{"jsonrpc":"2.0","id":"16","method":"window/workDoneProgress/create","params":{"token":"arduinoLanguageServerRebuild"}}
+<<<
+Content-Length: 41
+
+{"jsonrpc":"2.0","id":"16","result":null}
+>>>
+Content-Length: 140
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"arduinoLanguageServerRebuild","value":{"kind":"begin","title":"Building sketch"}}}Content-Length: 129
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"arduinoLanguageServerRebuild","value":{"kind":"end","message":"done"}}}
+<<<
+Content-Length: 315
+
+{"jsonrpc":"2.0","id":47,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino"},"position":{"line":15,"character":15}}}
+>>>
+Content-Length: 39
+
+{"jsonrpc":"2.0","id":47,"result":null}
+<<<
+Content-Length: 327
+
+{"jsonrpc":"2.0","id":48,"method":"textDocument/documentHighlight","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino"},"position":{"line":15,"character":16}}}
+>>>
+Content-Length: 212
+
+{"jsonrpc":"2.0","id":48,"result":[{"range":{"start":{"line":15,"character":8},"end":{"line":15,"character":13}},"kind":1},{"range":{"start":{"line":18,"character":8},"end":{"line":18,"character":13}},"kind":1}]}
+<<<
+Content-Length: 389
+
+{"jsonrpc":"2.0","id":49,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino"},"range":{"start":{"line":15,"character":14},"end":{"line":15,"character":16}},"context":{"diagnostics":[]}}}
+>>>
+Content-Length: 37
+
+{"jsonrpc":"2.0","id":49,"result":[]}
+<<<
+Content-Length: 320
+
+{"jsonrpc":"2.0","id":50,"method":"textDocument/definition","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino"},"position":{"line":15,"character":16}}}
+>>>
+Content-Length: 239
+
+{"jsonrpc":"2.0","id":50,"result":[{"uri":"file:///C:/Users/Administrator/AppData/Local/Arduino15/packages/arduino/hardware/avr/1.8.5/cores/arduino/wiring.c","range":{"start":{"line":105,"character":5},"end":{"line":105,"character":10}}}]}
+<<<
+Content-Length: 12898
+
+{"jsonrpc":"2.0","method":"textDocument/didOpen","params":{"textDocument":{"uri":"file:///c%3A/Users/Administrator/AppData/Local/Arduino15/packages/arduino/hardware/avr/1.8.5/cores/arduino/wiring.c","languageId":"c","version":1,"text":"/*\n  wiring.c - Partial implementation of the Wiring API for the ATmega8.\n  Part of Arduino - http://www.arduino.cc/\n\n  Copyright (c) 2005-2006 David A. Mellis\n\n  This library is free software; you can redistribute it and/or\n  modify it under the terms of the GNU Lesser General Public\n  License as published by the Free Software Foundation; either\n  version 2.1 of the License, or (at your option) any later version.\n\n  This library is distributed in the hope that it will be useful,\n  but WITHOUT ANY WARRANTY; without even the implied warranty of\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n  Lesser General Public License for more details.\n\n  You should have received a copy of the GNU Lesser General\n  Public License along with this library; if not, write to the\n  Free Software Foundation, Inc., 59 Temple Place, Suite 330,\n  Boston, MA  02111-1307  USA\n*/\n\n#include \"wiring_private.h\"\n\n// the prescaler is set so that timer0 ticks every 64 clock cycles, and the\n// the overflow handler is called every 256 ticks.\n#define MICROSECONDS_PER_TIMER0_OVERFLOW (clockCyclesToMicroseconds(64 * 256))\n\n// the whole number of milliseconds per timer0 overflow\n#define MILLIS_INC (MICROSECONDS_PER_TIMER0_OVERFLOW / 1000)\n\n// the fractional number of milliseconds per timer0 overflow. we shift right\n// by three to fit these numbers into a byte. (for the clock speeds we care\n// about - 8 and 16 MHz - this doesn't lose precision.)\n#define FRACT_INC ((MICROSECONDS_PER_TIMER0_OVERFLOW % 1000) >> 3)\n#define FRACT_MAX (1000 >> 3)\n\nvolatile unsigned long timer0_overflow_count = 0;\nvolatile unsigned long timer0_millis = 0;\nstatic unsigned char timer0_fract = 0;\n\n#if defined(TIM0_OVF_vect)\nISR(TIM0_OVF_vect)\n#else\nISR(TIMER0_OVF_vect)\n#endif\n{\n\t// copy these to local variables so they can be stored in registers\n\t// (volatile variables must be read from memory on every access)\n\tunsigned long m = timer0_millis;\n\tunsigned char f = timer0_fract;\n\n\tm += MILLIS_INC;\n\tf += FRACT_INC;\n\tif (f >= FRACT_MAX) {\n\t\tf -= FRACT_MAX;\n\t\tm += 1;\n\t}\n\n\ttimer0_fract = f;\n\ttimer0_millis = m;\n\ttimer0_overflow_count++;\n}\n\nunsigned long millis()\n{\n\tunsigned long m;\n\tuint8_t oldSREG = SREG;\n\n\t// disable interrupts while we read timer0_millis or we might get an\n\t// inconsistent value (e.g. in the middle of a write to timer0_millis)\n\tcli();\n\tm = timer0_millis;\n\tSREG = oldSREG;\n\n\treturn m;\n}\n\nunsigned long micros() {\n\tunsigned long m;\n\tuint8_t oldSREG = SREG, t;\n\t\n\tcli();\n\tm = timer0_overflow_count;\n#if defined(TCNT0)\n\tt = TCNT0;\n#elif defined(TCNT0L)\n\tt = TCNT0L;\n#else\n\t#error TIMER 0 not defined\n#endif\n\n#ifdef TIFR0\n\tif ((TIFR0 & _BV(TOV0)) && (t < 255))\n\t\tm++;\n#else\n\tif ((TIFR & _BV(TOV0)) && (t < 255))\n\t\tm++;\n#endif\n\n\tSREG = oldSREG;\n\t\n\treturn ((m << 8) + t) * (64 / clockCyclesPerMicrosecond());\n}\n\nvoid delay(unsigned long ms)\n{\n\tuint32_t start = micros();\n\n\twhile (ms > 0) {\n\t\tyield();\n\t\twhile ( ms > 0 && (micros() - start) >= 1000) {\n\t\t\tms--;\n\t\t\tstart += 1000;\n\t\t}\n\t}\n}\n\n/* Delay for the given number of microseconds.  Assumes a 1, 8, 12, 16, 20 or 24 MHz clock. */\nvoid delayMicroseconds(unsigned int us)\n{\n\t// call = 4 cycles + 2 to 4 cycles to init us(2 for constant delay, 4 for variable)\n\n\t// calling avrlib's delay_us() function with low values (e.g. 1 or\n\t// 2 microseconds) gives delays longer than desired.\n\t//delay_us(us);\n#if F_CPU >= 24000000L\n\t// for the 24 MHz clock for the adventurous ones trying to overclock\n\n\t// zero delay fix\n\tif (!us) return; //  = 3 cycles, (4 when true)\n\n\t// the following loop takes a 1/6 of a microsecond (4 cycles)\n\t// per iteration, so execute it six times for each microsecond of\n\t// delay requested.\n\tus *= 6; // x6 us, = 7 cycles\n\n\t// account for the time taken in the preceding commands.\n\t// we just burned 22 (24) cycles above, remove 5, (5*4=20)\n\t// us is at least 6 so we can subtract 5\n\tus -= 5; //=2 cycles\n\n#elif F_CPU >= 20000000L\n\t// for the 20 MHz clock on rare Arduino boards\n\n\t// for a one-microsecond delay, simply return.  the overhead\n\t// of the function call takes 18 (20) cycles, which is 1us\n\t__asm__ __volatile__ (\n\t\t\"nop\" \"\\n\\t\"\n\t\t\"nop\" \"\\n\\t\"\n\t\t\"nop\" \"\\n\\t\"\n\t\t\"nop\"); //just waiting 4 cycles\n\tif (us <= 1) return; //  = 3 cycles, (4 when true)\n\n\t// the following loop takes a 1/5 of a microsecond (4 cycles)\n\t// per iteration, so execute it five times for each microsecond of\n\t// delay requested.\n\tus = (us << 2) + us; // x5 us, = 7 cycles\n\n\t// account for the time taken in the preceding commands.\n\t// we just burned 26 (28) cycles above, remove 7, (7*4=28)\n\t// us is at least 10 so we can subtract 7\n\tus -= 7; // 2 cycles\n\n#elif F_CPU >= 16000000L\n\t// for the 16 MHz clock on most Arduino boards\n\n\t// for a one-microsecond delay, simply return.  the overhead\n\t// of the function call takes 14 (16) cycles, which is 1us\n\tif (us <= 1) return; //  = 3 cycles, (4 when true)\n\n\t// the following loop takes 1/4 of a microsecond (4 cycles)\n\t// per iteration, so execute it four times for each microsecond of\n\t// delay requested.\n\tus <<= 2; // x4 us, = 4 cycles\n\n\t// account for the time taken in the preceding commands.\n\t// we just burned 19 (21) cycles above, remove 5, (5*4=20)\n\t// us is at least 8 so we can subtract 5\n\tus -= 5; // = 2 cycles,\n\n#elif F_CPU >= 12000000L\n\t// for the 12 MHz clock if somebody is working with USB\n\n\t// for a 1 microsecond delay, simply return.  the overhead\n\t// of the function call takes 14 (16) cycles, which is 1.5us\n\tif (us <= 1) return; //  = 3 cycles, (4 when true)\n\n\t// the following loop takes 1/3 of a microsecond (4 cycles)\n\t// per iteration, so execute it three times for each microsecond of\n\t// delay requested.\n\tus = (us << 1) + us; // x3 us, = 5 cycles\n\n\t// account for the time taken in the preceding commands.\n\t// we just burned 20 (22) cycles above, remove 5, (5*4=20)\n\t// us is at least 6 so we can subtract 5\n\tus -= 5; //2 cycles\n\n#elif F_CPU >= 8000000L\n\t// for the 8 MHz internal clock\n\n\t// for a 1 and 2 microsecond delay, simply return.  the overhead\n\t// of the function call takes 14 (16) cycles, which is 2us\n\tif (us <= 2) return; //  = 3 cycles, (4 when true)\n\n\t// the following loop takes 1/2 of a microsecond (4 cycles)\n\t// per iteration, so execute it twice for each microsecond of\n\t// delay requested.\n\tus <<= 1; //x2 us, = 2 cycles\n\n\t// account for the time taken in the preceding commands.\n\t// we just burned 17 (19) cycles above, remove 4, (4*4=16)\n\t// us is at least 6 so we can subtract 4\n\tus -= 4; // = 2 cycles\n\n#else\n\t// for the 1 MHz internal clock (default settings for common Atmega microcontrollers)\n\n\t// the overhead of the function calls is 14 (16) cycles\n\tif (us <= 16) return; //= 3 cycles, (4 when true)\n\tif (us <= 25) return; //= 3 cycles, (4 when true), (must be at least 25 if we want to subtract 22)\n\n\t// compensate for the time taken by the preceding and next commands (about 22 cycles)\n\tus -= 22; // = 2 cycles\n\t// the following loop takes 4 microseconds (4 cycles)\n\t// per iteration, so execute it us/4 times\n\t// us is at least 4, divided by 4 gives us 1 (no zero delay bug)\n\tus >>= 2; // us div 4, = 4 cycles\n\t\n\n#endif\n\n\t// busy wait\n\t__asm__ __volatile__ (\n\t\t\"1: sbiw %0,1\" \"\\n\\t\" // 2 cycles\n\t\t\"brne 1b\" : \"=w\" (us) : \"0\" (us) // 2 cycles\n\t);\n\t// return = 4 cycles\n}\n\nvoid init()\n{\n\t// this needs to be called before setup() or some functions won't\n\t// work there\n\tsei();\n\t\n\t// on the ATmega168, timer 0 is also used for fast hardware pwm\n\t// (using phase-correct PWM would mean that timer 0 overflowed half as often\n\t// resulting in different millis() behavior on the ATmega8 and ATmega168)\n#if defined(TCCR0A) && defined(WGM01)\n\tsbi(TCCR0A, WGM01);\n\tsbi(TCCR0A, WGM00);\n#endif\n\n\t// set timer 0 prescale factor to 64\n#if defined(__AVR_ATmega128__)\n\t// CPU specific: different values for the ATmega128\n\tsbi(TCCR0, CS02);\n#elif defined(TCCR0) && defined(CS01) && defined(CS00)\n\t// this combination is for the standard atmega8\n\tsbi(TCCR0, CS01);\n\tsbi(TCCR0, CS00);\n#elif defined(TCCR0B) && defined(CS01) && defined(CS00)\n\t// this combination is for the standard 168/328/1280/2560\n\tsbi(TCCR0B, CS01);\n\tsbi(TCCR0B, CS00);\n#elif defined(TCCR0A) && defined(CS01) && defined(CS00)\n\t// this combination is for the __AVR_ATmega645__ series\n\tsbi(TCCR0A, CS01);\n\tsbi(TCCR0A, CS00);\n#else\n\t#error Timer 0 prescale factor 64 not set correctly\n#endif\n\n\t// enable timer 0 overflow interrupt\n#if defined(TIMSK) && defined(TOIE0)\n\tsbi(TIMSK, TOIE0);\n#elif defined(TIMSK0) && defined(TOIE0)\n\tsbi(TIMSK0, TOIE0);\n#else\n\t#error\tTimer 0 overflow interrupt not set correctly\n#endif\n\n\t// timers 1 and 2 are used for phase-correct hardware pwm\n\t// this is better for motors as it ensures an even waveform\n\t// note, however, that fast pwm mode can achieve a frequency of up\n\t// 8 MHz (with a 16 MHz clock) at 50% duty cycle\n\n#if defined(TCCR1B) && defined(CS11) && defined(CS10)\n\tTCCR1B = 0;\n\n\t// set timer 1 prescale factor to 64\n\tsbi(TCCR1B, CS11);\n#if F_CPU >= 8000000L\n\tsbi(TCCR1B, CS10);\n#endif\n#elif defined(TCCR1) && defined(CS11) && defined(CS10)\n\tsbi(TCCR1, CS11);\n#if F_CPU >= 8000000L\n\tsbi(TCCR1, CS10);\n#endif\n#endif\n\t// put timer 1 in 8-bit phase correct pwm mode\n#if defined(TCCR1A) && defined(WGM10)\n\tsbi(TCCR1A, WGM10);\n#endif\n\n\t// set timer 2 prescale factor to 64\n#if defined(TCCR2) && defined(CS22)\n\tsbi(TCCR2, CS22);\n#elif defined(TCCR2B) && defined(CS22)\n\tsbi(TCCR2B, CS22);\n//#else\n\t// Timer 2 not finished (may not be present on this CPU)\n#endif\n\n\t// configure timer 2 for phase correct pwm (8-bit)\n#if defined(TCCR2) && defined(WGM20)\n\tsbi(TCCR2, WGM20);\n#elif defined(TCCR2A) && defined(WGM20)\n\tsbi(TCCR2A, WGM20);\n//#else\n\t// Timer 2 not finished (may not be present on this CPU)\n#endif\n\n#if defined(TCCR3B) && defined(CS31) && defined(WGM30)\n\tsbi(TCCR3B, CS31);\t\t// set timer 3 prescale factor to 64\n\tsbi(TCCR3B, CS30);\n\tsbi(TCCR3A, WGM30);\t\t// put timer 3 in 8-bit phase correct pwm mode\n#endif\n\n#if defined(TCCR4A) && defined(TCCR4B) && defined(TCCR4D) /* beginning of timer4 block for 32U4 and similar */\n\tsbi(TCCR4B, CS42);\t\t// set timer4 prescale factor to 64\n\tsbi(TCCR4B, CS41);\n\tsbi(TCCR4B, CS40);\n\tsbi(TCCR4D, WGM40);\t\t// put timer 4 in phase- and frequency-correct PWM mode\t\n\tsbi(TCCR4A, PWM4A);\t\t// enable PWM mode for comparator OCR4A\n\tsbi(TCCR4C, PWM4D);\t\t// enable PWM mode for comparator OCR4D\n#else /* beginning of timer4 block for ATMEGA1280 and ATMEGA2560 */\n#if defined(TCCR4B) && defined(CS41) && defined(WGM40)\n\tsbi(TCCR4B, CS41);\t\t// set timer 4 prescale factor to 64\n\tsbi(TCCR4B, CS40);\n\tsbi(TCCR4A, WGM40);\t\t// put timer 4 in 8-bit phase correct pwm mode\n#endif\n#endif /* end timer4 block for ATMEGA1280/2560 and similar */\t\n\n#if defined(TCCR5B) && defined(CS51) && defined(WGM50)\n\tsbi(TCCR5B, CS51);\t\t// set timer 5 prescale factor to 64\n\tsbi(TCCR5B, CS50);\n\tsbi(TCCR5A, WGM50);\t\t// put timer 5 in 8-bit phase correct pwm mode\n#endif\n\n#if defined(ADCSRA)\n\t// set a2d prescaler so we are inside the desired 50-200 KHz range.\n\t#if F_CPU >= 16000000 // 16 MHz / 128 = 125 KHz\n\t\tsbi(ADCSRA, ADPS2);\n\t\tsbi(ADCSRA, ADPS1);\n\t\tsbi(ADCSRA, ADPS0);\n\t#elif F_CPU >= 8000000 // 8 MHz / 64 = 125 KHz\n\t\tsbi(ADCSRA, ADPS2);\n\t\tsbi(ADCSRA, ADPS1);\n\t\tcbi(ADCSRA, ADPS0);\n\t#elif F_CPU >= 4000000 // 4 MHz / 32 = 125 KHz\n\t\tsbi(ADCSRA, ADPS2);\n\t\tcbi(ADCSRA, ADPS1);\n\t\tsbi(ADCSRA, ADPS0);\n\t#elif F_CPU >= 2000000 // 2 MHz / 16 = 125 KHz\n\t\tsbi(ADCSRA, ADPS2);\n\t\tcbi(ADCSRA, ADPS1);\n\t\tcbi(ADCSRA, ADPS0);\n\t#elif F_CPU >= 1000000 // 1 MHz / 8 = 125 KHz\n\t\tcbi(ADCSRA, ADPS2);\n\t\tsbi(ADCSRA, ADPS1);\n\t\tsbi(ADCSRA, ADPS0);\n\t#else // 128 kHz / 2 = 64 KHz -> This is the closest you can get, the prescaler is 2\n\t\tcbi(ADCSRA, ADPS2);\n\t\tcbi(ADCSRA, ADPS1);\n\t\tsbi(ADCSRA, ADPS0);\n\t#endif\n\t// enable a2d conversions\n\tsbi(ADCSRA, ADEN);\n#endif\n\n\t// the bootloader connects pins 0 and 1 to the USART; disconnect them\n\t// here so they can be used as normal digital i/o; they will be\n\t// reconnected in Serial.begin()\n#if defined(UCSRB)\n\tUCSRB = 0;\n#elif defined(UCSR0B)\n\tUCSR0B = 0;\n#endif\n}\n"}}}Content-Length: 202
+
+{"jsonrpc":"2.0","method":"textDocument/didClose","params":{"textDocument":{"uri":"file:///c%3A/Users/Administrator/AppData/Local/Arduino15/packages/arduino/hardware/avr/1.8.5/cores/arduino/wiring.c"}}}
+>>>
+Content-Length: 119
+
+{"jsonrpc":"2.0","id":"17","method":"window/workDoneProgress/create","params":{"token":"arduinoLanguageServerRebuild"}}
+<<<
+Content-Length: 41
+
+{"jsonrpc":"2.0","id":"17","result":null}
+>>>
+Content-Length: 140
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"arduinoLanguageServerRebuild","value":{"kind":"begin","title":"Building sketch"}}}Content-Length: 129
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"arduinoLanguageServerRebuild","value":{"kind":"end","message":"done"}}}Content-Length: 114
+
+{"jsonrpc":"2.0","id":"18","method":"window/workDoneProgress/create","params":{"token":"backgroundIndexProgress"}}
+<<<
+Content-Length: 41
+
+{"jsonrpc":"2.0","id":"18","result":null}
+>>>
+Content-Length: 143
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"begin","title":"indexing","percentage":0}}}Content-Length: 141
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"0/1","percentage":0}}}Content-Length: 141
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"0/1","percentage":0}}}Content-Length: 107
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"end"}}}
+<<<
+Content-Length: 286
+
+{"jsonrpc":"2.0","id":51,"method":"textDocument/documentSymbol","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino"}}}Content-Length: 412
+
+{"jsonrpc":"2.0","method":"textDocument/didChange","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino","version":24},"contentChanges":[{"range":{"start":{"line":15,"character":14},"end":{"line":15,"character":16}},"rangeLength":2,"text":"1"}]}}Content-Length: 63
+
+{"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":51}}Content-Length: 286
+
+{"jsonrpc":"2.0","id":52,"method":"textDocument/documentSymbol","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino"}}}
+>>>
+Content-Length: 652
+
+{"jsonrpc":"2.0","id":51,"result":[{"name":"myservo","detail":"Servo","kind":13,"range":{"start":{"line":4,"character":0},"end":{"line":4,"character":13}},"selectionRange":{"start":{"line":4,"character":6},"end":{"line":4,"character":13}}},{"name":"setup","detail":"void ()","kind":12,"range":{"start":{"line":6,"character":0},"end":{"line":10,"character":1}},"selectionRange":{"start":{"line":6,"character":5},"end":{"line":6,"character":10}}},{"name":"loop","detail":"void ()","kind":12,"range":{"start":{"line":12,"character":0},"end":{"line":19,"character":1}},"selectionRange":{"start":{"line":12,"character":5},"end":{"line":12,"character":9}}}]}Content-Length: 652
+
+{"jsonrpc":"2.0","id":52,"result":[{"name":"myservo","detail":"Servo","kind":13,"range":{"start":{"line":4,"character":0},"end":{"line":4,"character":13}},"selectionRange":{"start":{"line":4,"character":6},"end":{"line":4,"character":13}}},{"name":"setup","detail":"void ()","kind":12,"range":{"start":{"line":6,"character":0},"end":{"line":10,"character":1}},"selectionRange":{"start":{"line":6,"character":5},"end":{"line":6,"character":10}}},{"name":"loop","detail":"void ()","kind":12,"range":{"start":{"line":12,"character":0},"end":{"line":19,"character":1}},"selectionRange":{"start":{"line":12,"character":5},"end":{"line":12,"character":9}}}]}
+<<<
+Content-Length: 389
+
+{"jsonrpc":"2.0","id":53,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino"},"range":{"start":{"line":15,"character":15},"end":{"line":15,"character":15}},"context":{"diagnostics":[]}}}
+>>>
+Content-Length: 37
+
+{"jsonrpc":"2.0","id":53,"result":[]}
+<<<
+Content-Length: 286
+
+{"jsonrpc":"2.0","id":54,"method":"textDocument/documentSymbol","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino"}}}Content-Length: 412
+
+{"jsonrpc":"2.0","method":"textDocument/didChange","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino","version":25},"contentChanges":[{"range":{"start":{"line":15,"character":15},"end":{"line":15,"character":15}},"rangeLength":0,"text":"5"}]}}Content-Length: 63
+
+{"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":54}}Content-Length: 286
+
+{"jsonrpc":"2.0","id":55,"method":"textDocument/documentSymbol","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino"}}}
+>>>
+Content-Length: 652
+
+{"jsonrpc":"2.0","id":54,"result":[{"name":"myservo","detail":"Servo","kind":13,"range":{"start":{"line":4,"character":0},"end":{"line":4,"character":13}},"selectionRange":{"start":{"line":4,"character":6},"end":{"line":4,"character":13}}},{"name":"setup","detail":"void ()","kind":12,"range":{"start":{"line":6,"character":0},"end":{"line":10,"character":1}},"selectionRange":{"start":{"line":6,"character":5},"end":{"line":6,"character":10}}},{"name":"loop","detail":"void ()","kind":12,"range":{"start":{"line":12,"character":0},"end":{"line":19,"character":1}},"selectionRange":{"start":{"line":12,"character":5},"end":{"line":12,"character":9}}}]}Content-Length: 652
+
+{"jsonrpc":"2.0","id":55,"result":[{"name":"myservo","detail":"Servo","kind":13,"range":{"start":{"line":4,"character":0},"end":{"line":4,"character":13}},"selectionRange":{"start":{"line":4,"character":6},"end":{"line":4,"character":13}}},{"name":"setup","detail":"void ()","kind":12,"range":{"start":{"line":6,"character":0},"end":{"line":10,"character":1}},"selectionRange":{"start":{"line":6,"character":5},"end":{"line":6,"character":10}}},{"name":"loop","detail":"void ()","kind":12,"range":{"start":{"line":12,"character":0},"end":{"line":19,"character":1}},"selectionRange":{"start":{"line":12,"character":5},"end":{"line":12,"character":9}}}]}
+<<<
+Content-Length: 389
+
+{"jsonrpc":"2.0","id":56,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino"},"range":{"start":{"line":15,"character":16},"end":{"line":15,"character":16}},"context":{"diagnostics":[]}}}
+>>>
+Content-Length: 37
+
+{"jsonrpc":"2.0","id":56,"result":[]}
+<<<
+Content-Length: 327
+
+{"jsonrpc":"2.0","id":57,"method":"textDocument/documentHighlight","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino"},"position":{"line":18,"character":15}}}
+>>>
+Content-Length: 37
+
+{"jsonrpc":"2.0","id":57,"result":[]}
+<<<
+Content-Length: 603
+
+{"jsonrpc":"2.0","method":"textDocument/didSave","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino","version":25},"text":"#include    <Servo.h>\r\n\r\n#define servo_PIN    9\r\n\r\nServo myservo;\r\n\r\nvoid setup()\r\n{\r\n    myservo.attach(servo_PIN);\r\n    myservo.write(90);\r\n}\r\n\r\nvoid loop()\r\n{\r\n        myservo.write(45);    \r\n        delay(15);\r\n\r\n        myservo.write(135);\r\n        delay(30);\r\n}\r\n"}}Content-Length: 286
+
+{"jsonrpc":"2.0","id":58,"method":"textDocument/documentSymbol","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino"}}}Content-Length: 412
+
+{"jsonrpc":"2.0","method":"textDocument/didChange","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino","version":26},"contentChanges":[{"range":{"start":{"line":18,"character":14},"end":{"line":18,"character":16}},"rangeLength":2,"text":"1"}]}}Content-Length: 63
+
+{"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":58}}Content-Length: 286
+
+{"jsonrpc":"2.0","id":59,"method":"textDocument/documentSymbol","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino"}}}
+>>>
+Content-Length: 652
+
+{"jsonrpc":"2.0","id":58,"result":[{"name":"myservo","detail":"Servo","kind":13,"range":{"start":{"line":4,"character":0},"end":{"line":4,"character":13}},"selectionRange":{"start":{"line":4,"character":6},"end":{"line":4,"character":13}}},{"name":"setup","detail":"void ()","kind":12,"range":{"start":{"line":6,"character":0},"end":{"line":10,"character":1}},"selectionRange":{"start":{"line":6,"character":5},"end":{"line":6,"character":10}}},{"name":"loop","detail":"void ()","kind":12,"range":{"start":{"line":12,"character":0},"end":{"line":19,"character":1}},"selectionRange":{"start":{"line":12,"character":5},"end":{"line":12,"character":9}}}]}Content-Length: 652
+
+{"jsonrpc":"2.0","id":59,"result":[{"name":"myservo","detail":"Servo","kind":13,"range":{"start":{"line":4,"character":0},"end":{"line":4,"character":13}},"selectionRange":{"start":{"line":4,"character":6},"end":{"line":4,"character":13}}},{"name":"setup","detail":"void ()","kind":12,"range":{"start":{"line":6,"character":0},"end":{"line":10,"character":1}},"selectionRange":{"start":{"line":6,"character":5},"end":{"line":6,"character":10}}},{"name":"loop","detail":"void ()","kind":12,"range":{"start":{"line":12,"character":0},"end":{"line":19,"character":1}},"selectionRange":{"start":{"line":12,"character":5},"end":{"line":12,"character":9}}}]}
+<<<
+Content-Length: 286
+
+{"jsonrpc":"2.0","id":60,"method":"textDocument/documentSymbol","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino"}}}Content-Length: 412
+
+{"jsonrpc":"2.0","method":"textDocument/didChange","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino","version":27},"contentChanges":[{"range":{"start":{"line":18,"character":15},"end":{"line":18,"character":15}},"rangeLength":0,"text":"5"}]}}Content-Length: 63
+
+{"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":60}}Content-Length: 286
+
+{"jsonrpc":"2.0","id":61,"method":"textDocument/documentSymbol","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino"}}}
+>>>
+Content-Length: 652
+
+{"jsonrpc":"2.0","id":60,"result":[{"name":"myservo","detail":"Servo","kind":13,"range":{"start":{"line":4,"character":0},"end":{"line":4,"character":13}},"selectionRange":{"start":{"line":4,"character":6},"end":{"line":4,"character":13}}},{"name":"setup","detail":"void ()","kind":12,"range":{"start":{"line":6,"character":0},"end":{"line":10,"character":1}},"selectionRange":{"start":{"line":6,"character":5},"end":{"line":6,"character":10}}},{"name":"loop","detail":"void ()","kind":12,"range":{"start":{"line":12,"character":0},"end":{"line":19,"character":1}},"selectionRange":{"start":{"line":12,"character":5},"end":{"line":12,"character":9}}}]}Content-Length: 652
+
+{"jsonrpc":"2.0","id":61,"result":[{"name":"myservo","detail":"Servo","kind":13,"range":{"start":{"line":4,"character":0},"end":{"line":4,"character":13}},"selectionRange":{"start":{"line":4,"character":6},"end":{"line":4,"character":13}}},{"name":"setup","detail":"void ()","kind":12,"range":{"start":{"line":6,"character":0},"end":{"line":10,"character":1}},"selectionRange":{"start":{"line":6,"character":5},"end":{"line":6,"character":10}}},{"name":"loop","detail":"void ()","kind":12,"range":{"start":{"line":12,"character":0},"end":{"line":19,"character":1}},"selectionRange":{"start":{"line":12,"character":5},"end":{"line":12,"character":9}}}]}
+<<<
+Content-Length: 389
+
+{"jsonrpc":"2.0","id":62,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino"},"range":{"start":{"line":18,"character":16},"end":{"line":18,"character":16}},"context":{"diagnostics":[]}}}
+>>>
+Content-Length: 37
+
+{"jsonrpc":"2.0","id":62,"result":[]}
+<<<
+Content-Length: 389
+
+{"jsonrpc":"2.0","id":63,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino"},"range":{"start":{"line":18,"character":18},"end":{"line":18,"character":18}},"context":{"diagnostics":[]}}}
+>>>
+Content-Length: 37
+
+{"jsonrpc":"2.0","id":63,"result":[]}Content-Length: 119
+
+{"jsonrpc":"2.0","id":"19","method":"window/workDoneProgress/create","params":{"token":"arduinoLanguageServerRebuild"}}
+<<<
+Content-Length: 41
+
+{"jsonrpc":"2.0","id":"19","result":null}
+>>>
+Content-Length: 140
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"arduinoLanguageServerRebuild","value":{"kind":"begin","title":"Building sketch"}}}
+<<<
+Content-Length: 603
+
+{"jsonrpc":"2.0","method":"textDocument/didSave","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino","version":27},"text":"#include    <Servo.h>\r\n\r\n#define servo_PIN    9\r\n\r\nServo myservo;\r\n\r\nvoid setup()\r\n{\r\n    myservo.attach(servo_PIN);\r\n    myservo.write(90);\r\n}\r\n\r\nvoid loop()\r\n{\r\n        myservo.write(45);    \r\n        delay(15);\r\n\r\n        myservo.write(135);\r\n        delay(15);\r\n}\r\n"}}
+>>>
+Content-Length: 129
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"arduinoLanguageServerRebuild","value":{"kind":"end","message":"done"}}}
+<<<
+Content-Length: 603
+
+{"jsonrpc":"2.0","method":"textDocument/didSave","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino","version":27},"text":"#include    <Servo.h>\r\n\r\n#define servo_PIN    9\r\n\r\nServo myservo;\r\n\r\nvoid setup()\r\n{\r\n    myservo.attach(servo_PIN);\r\n    myservo.write(90);\r\n}\r\n\r\nvoid loop()\r\n{\r\n        myservo.write(45);    \r\n        delay(15);\r\n\r\n        myservo.write(135);\r\n        delay(15);\r\n}\r\n"}}Content-Length: 387
+
+{"jsonrpc":"2.0","id":64,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino"},"range":{"start":{"line":19,"character":1},"end":{"line":19,"character":1}},"context":{"diagnostics":[]}}}
+>>>
+Content-Length: 37
+
+{"jsonrpc":"2.0","id":64,"result":[]}Content-Length: 119
+
+{"jsonrpc":"2.0","id":"20","method":"window/workDoneProgress/create","params":{"token":"arduinoLanguageServerRebuild"}}
+<<<
+Content-Length: 41
+
+{"jsonrpc":"2.0","id":"20","result":null}
+>>>
+Content-Length: 140
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"arduinoLanguageServerRebuild","value":{"kind":"begin","title":"Building sketch"}}}
+<<<
+Content-Length: 603
+
+{"jsonrpc":"2.0","method":"textDocument/didSave","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino","version":27},"text":"#include    <Servo.h>\r\n\r\n#define servo_PIN    9\r\n\r\nServo myservo;\r\n\r\nvoid setup()\r\n{\r\n    myservo.attach(servo_PIN);\r\n    myservo.write(90);\r\n}\r\n\r\nvoid loop()\r\n{\r\n        myservo.write(45);    \r\n        delay(15);\r\n\r\n        myservo.write(135);\r\n        delay(15);\r\n}\r\n"}}
+>>>
+Content-Length: 129
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"arduinoLanguageServerRebuild","value":{"kind":"end","message":"done"}}}
+<<<
+Content-Length: 389
+
+{"jsonrpc":"2.0","id":65,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino"},"range":{"start":{"line":18,"character":18},"end":{"line":18,"character":18}},"context":{"diagnostics":[]}}}
+>>>
+Content-Length: 37
+
+{"jsonrpc":"2.0","id":65,"result":[]}Content-Length: 119
+
+{"jsonrpc":"2.0","id":"21","method":"window/workDoneProgress/create","params":{"token":"arduinoLanguageServerRebuild"}}
+<<<
+Content-Length: 41
+
+{"jsonrpc":"2.0","id":"21","result":null}
+>>>
+Content-Length: 140
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"arduinoLanguageServerRebuild","value":{"kind":"begin","title":"Building sketch"}}}Content-Length: 129
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"arduinoLanguageServerRebuild","value":{"kind":"end","message":"done"}}}Content-Length: 114
+
+{"jsonrpc":"2.0","id":"22","method":"window/workDoneProgress/create","params":{"token":"backgroundIndexProgress"}}
+<<<
+Content-Length: 41
+
+{"jsonrpc":"2.0","id":"22","result":null}
+>>>
+Content-Length: 143
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"begin","title":"indexing","percentage":0}}}Content-Length: 141
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"0/1","percentage":0}}}Content-Length: 141
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"0/1","percentage":0}}}Content-Length: 107
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"end"}}}
+<<<
+Content-Length: 389
+
+{"jsonrpc":"2.0","id":66,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino"},"range":{"start":{"line":17,"character":27},"end":{"line":17,"character":27}},"context":{"diagnostics":[]}}}
+>>>
+Content-Length: 37
+
+{"jsonrpc":"2.0","id":66,"result":[]}
+<<<
+Content-Length: 389
+
+{"jsonrpc":"2.0","id":67,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino"},"range":{"start":{"line":18,"character":18},"end":{"line":18,"character":18}},"context":{"diagnostics":[]}}}
+>>>
+Content-Length: 37
+
+{"jsonrpc":"2.0","id":67,"result":[]}
+<<<
+Content-Length: 387
+
+{"jsonrpc":"2.0","id":68,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino"},"range":{"start":{"line":9,"character":22},"end":{"line":9,"character":22}},"context":{"diagnostics":[]}}}
+>>>
+Content-Length: 37
+
+{"jsonrpc":"2.0","id":68,"result":[]}
+<<<
+Content-Length: 313
+
+{"jsonrpc":"2.0","id":69,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino"},"position":{"line":6,"character":5}}}
+>>>
+Content-Length: 230
+
+{"jsonrpc":"2.0","id":69,"result":{"contents":{"kind":"markdown","value":"### function `setup`  \n\n---\n→ `void`  \n\n---\n```cpp\nvoid setup()\n```"},"range":{"start":{"line":6,"character":5},"end":{"line":6,"character":10}}}}
+<<<
+Content-Length: 387
+
+{"jsonrpc":"2.0","id":70,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino"},"range":{"start":{"line":12,"character":0},"end":{"line":19,"character":1}},"context":{"diagnostics":[]}}}
+>>>
+Content-Length: 37
+
+{"jsonrpc":"2.0","id":70,"result":[]}
+<<<
+Content-Length: 314
+
+{"jsonrpc":"2.0","id":71,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino"},"position":{"line":15,"character":8}}}
+>>>
+Content-Length: 285
+
+{"jsonrpc":"2.0","id":71,"result":{"contents":{"kind":"markdown","value":"### function `delay`  \n\n---\n→ `void`  \nParameters:  \n- `unsigned long ms`\n\n---\n```cpp\nvoid delay(unsigned long ms)\n```"},"range":{"start":{"line":15,"character":8},"end":{"line":15,"character":13}}}}
+<<<
+Content-Length: 389
+
+{"jsonrpc":"2.0","id":72,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0076%E6%8B%8D%E7%85%A7%E9%BA%A6%E5%85%8B%E8%BD%AEWiFi%E5%B0%8F%E8%BD%A6/ZYC0076/ZYC0076-EN/4_Arduino_Code/2_servo_Angle/2_servo_Angle.ino"},"range":{"start":{"line":12,"character":11},"end":{"line":12,"character":11}},"context":{"diagnostics":[]}}}
+>>>
+Content-Length: 37
+
+{"jsonrpc":"2.0","id":72,"result":[]}
+<<<
+Content-Length: 59
+
+{"jsonrpc":"2.0","id":73,"method":"shutdown","params":null}
+>>>
+Content-Length: 39
+
+{"jsonrpc":"2.0","id":73,"result":null}
+<<<
+Content-Length: 47
+
+{"jsonrpc":"2.0","method":"exit","params":null}
